@@ -1,4 +1,4 @@
-/<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -11,11 +11,19 @@
 			<h1>ZengLiting</h1>
 	<p><i>The best time to plant a tree was 10 years ago. The second best time is now.</i></p>
 		</header>
-<nav></nav>
+<nav>
+	<ul>
+	<li><a href="#aboutme">About Me</a></li>
+	<li><a href="#topskills">Top Skills</a></li>
+	<li><a href="#technologies">Techonologies I Use</a></li>
+	<li><a href="#glossary">Glossary</a></li>
+	<li><a href="#reserved">Reserved Number Example</a></li>
+</ul>
+</nav>
 
 <section>
 
-	<h1>About Me</h1>
+	<h1 id="aboutme">About Me</h1>
 
 	<h2>Basic information</h2>
 	<p>Name: Zengliting<br>Birthday: 2005.08.08<br>Country: China<br>Gender: Female<br>Occupation: Student</p>
@@ -35,13 +43,65 @@
     <!-- Difference: <strong>/<em> carry semantic meaning, while <b>/<i> are purely stylistic -->
 
     <p>I'm learning <abbr title="HyperText MarkUp Language">HTML</abbr>.<br>
+
     	<dfn>Semantic HTML</dfn> means HTML that introduces meaning to the web page rather than just presentation.</p>
+
     	<p>Einstein’s equation: E = mc<sup>2</sup>.<br>Water is H<sub>2</sub>O.</p>
     <p>This is a <mark>key phrase</mark> you should notice.</p>
-
 </section>
 
-<section></section>
+<section>
+	<h1 id="topskills"> Top Skills</h1>
+	<ol type="I" start="3">
+		<li>Active Listening</li>
+		<li>Adapatability</li>
+		<li>Decision-making</li>
+</section>
+
+<section id="technologies">
+    <h1>Technologies I Use</h1>
+    <ul>
+      <li>C++</li>
+      <li>Visual Basic(VB)</li>
+      <li>Java
+        <ul>
+          <li>Core Java</li>
+          <li>OOP Concepts</li>
+          <li>Functional Programming</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="glossary">
+    <h1>Glossary</h1>
+    <dl>
+    	<dt>Accessibility</dt>
+    	<dd>Ensuring websites are usable for all users, including those with disabilities.</dd>
+
+    	<dt>Frontend Development</dt>
+    	<dd>Frontend development focuses on the design and functionality of the user interface(UI) by using coding languages such as HTML, CSS and JavaScript.</dd>
+
+    	<dt>Plugins</dt>
+    	<dd>Plugins are software components added to provide extra functionalities to a website, which can enhance both UX and UI.</dd>
+
+    	<dt>User Experience(UX)</dt>
+    	<dd>UX is the overall usability, accessibility and navigation of a website.</dd>
+
+    	<dt>Cache</dt>
+    	<dd>Cache is a form of web storage used in website development that helps improve the loading speed of a webpage and its elements.</dd>
+    </dl>
+</section>
+
+<section id="reserved">
+	<h1>Reversed List Example</h1>
+	<ol reversed>
+      <li>Coke</li>
+      <li>Milk</li>
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ol>
+</section>
 
 </main>
 </body>
