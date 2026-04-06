@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="width=device-width, initial-scale=1">
+	<meta name="description" content="My Personal portfolio website">
 	<title>My First HTML webpage</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<main>
@@ -59,6 +60,7 @@
 		<li>Active Listening</li>
 		<li>Adapatability</li>
 		<li>Decision-making</li>
+	</ol>
 </section>
 
 <section id="technologies">
@@ -130,7 +132,7 @@
 				<td>A</td>
 			</tr>
 			<tr>
-				<th scope="row">Professional Communication Skills
+				<th scope="row">Professional Communication Skills</th>
 					<td>Skimming</td>
 					<td>2</td>
 					<td>A</td>
@@ -169,23 +171,17 @@
 <section id="contact">
 	<h1>Contact Me</h1>
 	<form action="#" method="post">
-      <fieldset style="border:2px solid gray; padding:10px;">
-        <legend style="color:blue; font-size:18px;">Contact Form</legend>
+      <fieldset>
+        <legend>Contact Form</legend>
 
         <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname"
-          style="border:2px solid navy; padding:6px; font-size:14px;"
-          placeholder="Your full name" required maxlength="60"><br><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Your full name" required maxlength="60"><br><br>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email"
-          style="background-color:#f0f8ff; padding:6px;"
-          placeholder="example@mail.com" required><br><br>
+        <input type="email" id="email" name="email"placeholder="example@mail.com" required><br><br>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone"
-          style="border:1px solid black; padding:4px;"
-          placeholder="012-3456789" required><br><br>
+        <input type="tel" id="phone" name="phone"placeholder="012-3456789" required><br><br>
 
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" min="18" max="99"><br><br>
@@ -225,20 +221,16 @@
         <label for="whatsappContact">WhatsApp</label><br><br>
 
         <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="40"
-          style="border:1px solid gray; background-color:#f9f9f9; padding:5px;"
-          placeholder="Write your message here..." required></textarea><br><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea><br><br>
 
-        <button type="submit" style="background-color:green; color:white; padding:8px;">Submit</button>
+        <button type="submit">Submit</button>
       </fieldset>
     </form>
   </section>
-
 </main>
-</body>
-
 <footer>
 	<address></address>
 	<small>&copy; 2026 My First HTML webpage. All rights reserved.</small>
 </footer>
+</body>
 </html>
