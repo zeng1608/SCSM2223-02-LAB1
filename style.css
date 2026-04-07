@@ -229,3 +229,69 @@ section {
   border-radius: 6px;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: var(--space-md) 0;
+  border: 1px solid var(--color-grey-mid);
+  border-radius: 6px;
+  overflow: hidden; 
+  box-shadow: 0 4px 6px var(--color-shadow);
+  background-color: var(--color-surface);
+}
+
+caption {
+  caption-side: top;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--color-secondary);
+  padding: var(--space-sm);
+}
+
+th, td {
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--color-grey-mid);
+}
+th {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-grey-light); 
+}
+tr:hover {
+  background-color: var(--color-accent); 
+  color: var(--color-primary);
+}
+/* Task 4 - Grid Layouts */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: var(--space-md);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.card {
+  background-color: var(--color-surface);
+  padding: var(--space-md);
+  border: 1px solid var(--color-grey-mid);
+  border-radius: 6px;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card:first-child {
+  grid-column: span 2;
+}

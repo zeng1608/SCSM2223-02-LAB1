@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<main>
+	<main class="layout">
 		<header>
 			<figure>
-		<img src="images/Profile Photo.jpg" alt="Profile photo of me with blue background" width="150" height="180" align="left" title="This is my profile photo">
+		<img src="images/Profile Photo.jpg" alt="Profile photo of me with blue background" width="150" height="180" title="This is my profile photo">
 		<figcaption>My Profile Photo</figcaption>
 
 	</figure>
@@ -64,11 +64,11 @@
 
 <section>
 	<h1 id="topskills"> Top Skills</h1>
-	<ol type="I" start="3">
-		<li>Active Listening</li>
-		<li>Adapatability</li>
-		<li>Decision-making</li>
-	</ol>
+	<div class="card-grid">
+		<div class="card">Active Listening</div>
+		<div class="card">Adapatability</div>
+		<div class="card">Decision-making</div>
+	</div>
 </section>
 
 <section id="technologies">
@@ -227,6 +227,10 @@
       </fieldset>
     </form>
   </section>
+  <aside>
+  	<h2>Quick Info</h2>
+  	<p>This is a sidebar section.</p>
+  </aside>
 </main>
 <footer>
 	<address></address>
