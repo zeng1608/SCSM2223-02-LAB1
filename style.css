@@ -176,6 +176,9 @@ nav a:hover{
 nav a.active {
   border-bottom: 3px solid var(--color-accent1);
 }
+nav a:visited {
+  color: var(--color-white);
+}
 
 main {
   background-color: var(--color-grey-light);
@@ -308,6 +311,13 @@ img {
   height: auto;
 }
 
+/* ============================================
+BREAKPOINTS
+mobile-first base: 320px and up (default)
+tablet: @media (min-width: 600px)
+desktop: @media (min-width: 1024px)
+============================================ */
+
 @media (min-width: 600px) {
   header {
     flex-direction: row;
@@ -335,4 +345,82 @@ img {
   nav ul {
     justify-content: flex-end;
   }
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="date"],
+form textarea,
+form select {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid var(--color-grey-mid);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  margin-bottom: var(--space-md);
+  transition: box-shadow 0.2s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form textarea:focus,
+form select:focus {
+  box-shadow: 0 0 0 3px var(--color-accent);
+  outline: none;
+}
+
+form button[type="submit"] {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-heading);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+form button[type="submit"]:hover {
+  background-color: var(--color-accent2);
+}
+
+form button[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+
+blockquote::before {
+  content: "“";
+  color: var(--color-accent);
+  font-size: 2rem;
+  margin-right: var(--space-sm);
+}
+
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 1.2em;
+  background-color: var(--color-accent);
+  margin-left: var(--space-sm);
+}
+
+#academicRecord tbody tr:nth-child(even) {
+  background-color: var(--color-grey-light);
+}
+
+nav ul li {
+  border-top: 1px solid var(--color-grey-mid);
+}
+
+nav ul li:first-child {
+  border-top: none;
+}
+
+nav ul li:last-child {
+  border-bottom: none;
 }
